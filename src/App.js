@@ -9,7 +9,7 @@ import Followers from "./components/Followers/Followers";
 
 const GithubToastLink = () => (
   <div>
-    Star this Project on <a href="https://github.com">Github</a>
+    Star this Project on <a href="https://github.com/gokiimax/Github-User-Stats">Github</a>
   </div>
 );
 
