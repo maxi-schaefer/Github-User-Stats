@@ -1,0 +1,113 @@
+.main {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.headline {
+    font-size: 25px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    text-decoration: underline;
+}
+
+.projectCard {
+    height: 220px;
+    width: 650px;
+    border-radius: 12px;
+    background-color: var(--card-bg);
+    z-index: 2;
+    cursor: pointer;
+    transition: all .4s ease;
+    margin: 15px;
+    margin-top: 150px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.445);
+
+    .project_info {
+        background-color: var(--card-bg);
+        padding: 50px;
+        text-align: start;
+        justify-content: center;
+        border-radius: 12px;
+
+        .projectName {
+            background-color: var(--card-bg);
+            font-size: 25px;
+            color: white;
+            margin-bottom: 15px;
+        }
+    
+        .projectInfo {
+            background-color: var(--card-bg);
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 50px;
+        }
+
+        .github {
+            background-color: var(--card-bg);
+            right: 0;
+            margin-left: auto;
+            font-size: 25px;
+            display: flex;
+            flex-direction: row;
+
+            a {
+                background-color: var(--card-bg);
+                color: #fff;
+
+                * {
+                    background-color: var(--card-bg);
+                    transition: all .3s ease;
+                }
+            }
+
+            a:hover {
+                * {
+                    color: var(--default);
+                }
+            }
+
+            .language {
+                background-color: var(--card-bg);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-left: 15px;
+
+                p {
+                    background-color: var(--card-bg);
+                    font-size: 15px;
+                    color: rgb(211, 211, 211);
+                }
+
+            }
+            .circle {
+                background-color: var(--card-bg);
+                color: var(--default);
+                font-size: 12px;
+                margin-right: 5px;
+            }
+            .stars {
+                background-color: var(--card-bg);
+                color: rgb(236, 201, 86);
+                font-size: 12px;
+                margin-right: 5px;
+            }
+            .forks {
+                background-color: var(--card-bg);
+                color: #d4d4d4;
+                font-size: 12px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.projectCard:hover {
+    transform: translateY(-5px);
+}

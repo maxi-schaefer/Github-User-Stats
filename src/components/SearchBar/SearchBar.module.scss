@@ -1,0 +1,26 @@
+.control {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 15px;
+    background-color: var(--background);
+
+    .icon {
+        color: var(--default);
+        margin-right: 10px;
+    }
+    
+    .input {
+        background-color: var(--background);
+        color: white;
+        padding: 5px;
+        outline: none;
+        border: none;
+        border-radius: 12px;
+        width: 250px;    
+    }
+
+    .input:focus .icon {
+        color: red;
+    }
+}

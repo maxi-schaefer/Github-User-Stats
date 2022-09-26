@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+    --toastify-color-dark: #1e232c;
+    --toastify-toast-background: #1e232c;
+
+    --background: #0e0e0e;
+    --default: rgb(62, 214, 120);
+    --card-bg: #121212;
+}
+
+* {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+  color: var(--default);
+}
+
+html, body {
+  background-color: var(--background);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--card-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--default);
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--default);
+}
+
+
