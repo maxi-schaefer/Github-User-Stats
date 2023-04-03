@@ -9,13 +9,13 @@ import Followers from "./components/Followers/Followers";
 
 const GithubToastLink = () => (
   <div>
-    Star this Project on <a href="https://github.com/gokiimax/Github-User-Stats">Github</a>
+    Star this Project on <a href="https://github.com/maxi-schaefer/Github-User-Stats">Github</a>
   </div>
 );
 
 const DiscordToastLink = () => (
   <div>
-    Join the <a href="https://dsc.gg/gokimax" target="_blank">Discord</a>
+    Join the <a href="https://dsc.gg/akago" target="_blank">Discord</a>
   </div>
 );
 
@@ -56,9 +56,9 @@ function App() {
 }
 
   useEffect(() => {
-    fetchData("gokiimax").catch(console.error)
-    fetchReposData("gokiimax").catch(console.error)
-    fetchFollowers("gokiimax").catch(console.error)
+    fetchData("maxi-schaefer").catch(console.error)
+    fetchReposData("maxi-schaefer").catch(console.error)
+    fetchFollowers("maxi-schaefer").catch(console.error)
     GithubNotify(GithubToastLink)
     DiscordNotify(DiscordToastLink)
   }, [])
